@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:textSize="16sp"
+        android:id="@+id/tv_nickname"
+		android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dip"
+        
+         />
+    
+    <Button 
+        android:id="@+id/btn_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nickname"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="5dip"
+        android:textColor="#404040"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+
+        android:background="@drawable/chatto_bg_normal"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:drawableLeft="@drawable/camera"
+        android:textSize="22sp"
+        android:padding="15dip"
+        android:background="#eeFFFFFF"
+        android:id="@+id/fromCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Camera" />
+
+    <Button
+        android:drawableLeft="@drawable/image"
+        android:textSize="22sp"
+        android:padding="15dip"
+        android:background="#eeFFFFFF"
+        android:id="@+id/fromPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Photos" />
+
+</LinearLayout>

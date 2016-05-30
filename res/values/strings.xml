@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AllChat</string>
+    
+    
+    <string name="enterNickName">Enter nick name</string>
+    <string name="enterMessageHint">Enter message</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sword.allchat"
+    android:versionCode="1"
+    android:versionName="1.1">
+    <uses-sdk android:minSdkVersion="10" />
+    <!-- Permission required to use the TCP transport -->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!-- Permission required to use the Bluetooth transport -->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>    
+
+    <uses-permission android:name="android.permission.CAMERA"/>    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+<application
+    	android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:name=".ChatApplication">
+        
+        <activity
+            android:name=".StartActivity"
+            android:label="AllJoyn Chat Begin" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TabWidget"
+            android:label="@string/app_name">
+
+
+        </activity>
+
+        <activity 
+            android:name=".HostActivity" 
+            android:windowSoftInputMode="adjustResize"
+            android:label="AllJoyn Chat Channel Hosting">
+        </activity>
+
+        <activity 
+            android:windowSoftInputMode="stateHidden"  
+            android:name=".UseActivity"
+
+            android:label="AllJoyn Chat Channel Usage">
+        </activity>
+        
+        <service
+            android:icon="@drawable/icon_small"
+            android:name="AllJoynService">
+        </service>
+        
+    </application>
+</manifest> 
